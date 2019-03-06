@@ -1,0 +1,261 @@
+.container {
+  width: 100%;
+  margin: 0 auto; }
+
+.container:after, .row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*='col-'] {
+  float: left;
+  padding: 1%;
+  width: 100%;
+  min-height: 1px;
+  display: inline-block; }
+
+@media only screen and (min-width: 0px) {
+  .container {
+    width: 95%;
+    max-width: 1200px; }
+
+  .col-sm-1 {
+    width: 6.3333333333%; }
+
+  .col-sm-2 {
+    width: 14.6666666667%; }
+
+  .col-sm-3 {
+    width: 23%; }
+
+  .col-sm-4 {
+    width: 31.3333333333%; }
+
+  .col-sm-5 {
+    width: 39.6666666667%; }
+
+  .col-sm-6 {
+    width: 48%; }
+
+  .col-sm-7 {
+    width: 56.3333333333%; }
+
+  .col-sm-8 {
+    width: 64.6666666667%; }
+
+  .col-sm-9 {
+    width: 73%; }
+
+  .col-sm-10 {
+    width: 81.3333333333%; }
+
+  .col-sm-11 {
+    width: 89.6666666667%; }
+
+  .col-sm-12 {
+    width: 98%; } }
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 95%;
+    max-width: 1200px; }
+
+  .col-md-1 {
+    width: 6.3333333333%; }
+
+  .col-md-2 {
+    width: 14.6666666667%; }
+
+  .col-md-3 {
+    width: 23%; }
+
+  .col-md-4 {
+    width: 31.3333333333%; }
+
+  .col-md-5 {
+    width: 39.6666666667%; }
+
+  .col-md-6 {
+    width: 48%; }
+
+  .col-md-7 {
+    width: 56.3333333333%; }
+
+  .col-md-8 {
+    width: 64.6666666667%; }
+
+  .col-md-9 {
+    width: 73%; }
+
+  .col-md-10 {
+    width: 81.3333333333%; }
+
+  .col-md-11 {
+    width: 89.6666666667%; }
+
+  .col-md-12 {
+    width: 98%; } }
+@media only screen and (min-width: 1008px) {
+  .container {
+    width: 95%;
+    max-width: 1200px; }
+
+  .col-lg-1 {
+    width: 6.3333333333%; }
+
+  .col-lg-2 {
+    width: 14.6666666667%; }
+
+  .col-lg-3 {
+    width: 23%; }
+
+  .col-lg-4 {
+    width: 31.3333333333%; }
+
+  .col-lg-5 {
+    width: 39.6666666667%; }
+
+  .col-lg-6 {
+    width: 48%; }
+
+  .col-lg-7 {
+    width: 56.3333333333%; }
+
+  .col-lg-8 {
+    width: 64.6666666667%; }
+
+  .col-lg-9 {
+    width: 73%; }
+
+  .col-lg-10 {
+    width: 81.3333333333%; }
+
+  .col-lg-11 {
+    width: 89.6666666667%; }
+
+  .col-lg-12 {
+    width: 98%; } }
+@media only screen and (min-width: 1300px) {
+  .container {
+    width: 95%;
+    max-width: 1200px; }
+
+  .col-xl-1 {
+    width: 6.3333333333%; }
+
+  .col-xl-2 {
+    width: 14.6666666667%; }
+
+  .col-xl-3 {
+    width: 23%; }
+
+  .col-xl-4 {
+    width: 31.3333333333%; }
+
+  .col-xl-5 {
+    width: 39.6666666667%; }
+
+  .col-xl-6 {
+    width: 48%; }
+
+  .col-xl-7 {
+    width: 56.3333333333%; }
+
+  .col-xl-8 {
+    width: 64.6666666667%; }
+
+  .col-xl-9 {
+    width: 73%; }
+
+  .col-xl-10 {
+    width: 81.3333333333%; }
+
+  .col-xl-11 {
+    width: 89.6666666667%; }
+
+  .col-xl-12 {
+    width: 98%; } }
+.nav {
+  overflow: hidden;
+  background-color: #FF4136; }
+  .nav p {
+    margin: 15px;
+    text-align: justify;
+    color: white; }
+  .nav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; }
+  .nav span {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; }
+  .nav:hover {
+    background-color: #ddd;
+    color: black; }
+
+.fijo {
+  position: fixed;
+  z-index: 1;
+  width: 100%; }
+
+html,
+body {
+  margin: 0;
+  height: 100%; }
+
+body {
+  min-height: 100%; }
+
+.fondo {
+  background-color: #2ECC40;
+  height: 100%; }
+
+.full-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.bounce-class {
+  -webkit-animation: bounce 0.75s infinite; }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 30px; }
+  .card img {
+    width: 100%;
+    position: relative; }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(1, 1) translate(0px, 0px); }
+  30% {
+    transform: scale(1, 0.8) translate(0px, 10px); }
+  75% {
+    transform: scale(1, 1.1) translate(0px, -25px); }
+  100% {
+    transform: scale(1, 1) translate(0px, 0px); } }
+
+/*# sourceMappingURL=estilos.css.map */

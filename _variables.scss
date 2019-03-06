@@ -1,0 +1,57 @@
+//sistema de grid
+$grid-columns:12;
+$grid-max-width:1200px;
+$padding:1;
+$clrssRED:#FF4136;
+$clrssGREEN:#2ECC40;
+$clrssNAVY:#001f3f;
+
+$breakpoint-small:"only screen and (min-width:0px)";
+$breakpoint-medium:"only screen and (min-width:768px)";
+$breakpoint-large:"only screen and (min-width:1008px)";
+$breakpoint-xl:"only screen and (min-width:1300px)";
+
+
+
+$breaks-collection: ($breakpoint-small, $breakpoint-medium, $breakpoint-large, $breakpoint-xl);
+
+
+@mixin generarTriggers{
+    @each $break in $breaks-collection {
+        @media #{$break}{
+            $res:"";
+            @if $break == $breakpoint-small{
+                $res:'.col-sm-';
+            }
+            @if $break == $breakpoint-medium{
+                $res:'.col-md-';
+            }
+            @if $break == $breakpoint-large{
+                $res:'.col-lg-';
+            }
+            @if $break == $breakpoint-xl{
+                $res:'.col-xl-';
+            }
+            @include modifyContainer;
+            @for $i from 1 through $grid-columns{
+                #{$res}#{$i}{
+                    @include calculo($i)
+                }
+            }
+        }
+    }
+}
+
+
+
+@mixin calculo($i){
+    $multiplicacion:2*$padding;
+    $tamaño: 100% - ($grid-columns/$i)*$multiplicacion;
+    width: ($tamaño / $grid-columns) * $i;
+}
+@mixin modifyContainer(){
+    .container{
+        width:95%;
+        max-width: $grid-max-width;
+    }
+}

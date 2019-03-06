@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.container:after,.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+[class*='col-']{
+    float:left;
+    padding:1%;
+    width: 100%;
+    min-height: 1px;
+    display:inline-block;
+}
+
+@include generarTriggers;
+
+
+
+
+
+
+
+

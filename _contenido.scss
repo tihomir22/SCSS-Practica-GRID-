@@ -1,0 +1,73 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+  body {
+    min-height: 100%;
+  }
+.fondo{
+    background-color:$clrssGREEN;
+   height: 100%;
+}
+
+.full-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    z-index: 1;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    
+}
+
+.bounce-class{
+    -webkit-animation: bounce 0.75s infinite;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    text-align: center;
+    padding:5px;
+    margin-bottom: 30px;
+
+    img{
+        width: 100%;
+        position:relative;
+    }
+       
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+  }
+  
+
+  @-webkit-keyframes bounce {
+    0% {
+        transform: scale(1,1) translate(0px, 0px);
+        }
+
+    30%{
+        transform: scale(1,0.8) translate(0px, 10px); 
+    }
+
+    75%{
+    transform: scale(1,1.1) translate(0px, -25px); 
+    }
+
+    100% {
+    transform: scale(1,1) translate(0px, 0px);
+    }
+}
+  
+  
